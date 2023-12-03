@@ -1,0 +1,46 @@
+.Course {
+    display: flex;
+
+    &-img {
+        width: 200px;
+        height: 145px;
+        margin-right: 35px;
+    }
+
+    &-info {
+        .courseAuthorNameSection {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-authImg {
+        border-radius: 50%;
+        margin-right: 15px; 
+    }
+
+    &-authName {
+        color: var(--neutral-700, #3C4563);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; 
+    }
+
+    &-courseName {
+        color: var(--mrt-app-headline, #1B1C57);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin: 15px 0;
+    }
+
+    &-duration {
+        color: var(--neutral-500, #888B97);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

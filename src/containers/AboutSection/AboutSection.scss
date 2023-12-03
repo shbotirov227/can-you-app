@@ -12,4 +12,10 @@
         text-transform: none;
         margin-bottom: 50px;
     }
+
+    &-cards {
+        .swiper {
+            width: 100%;
+        }
+    }
 }

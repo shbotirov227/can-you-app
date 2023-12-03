@@ -1,12 +1,7 @@
 import React from 'react'
 import AboutSectionCard from "../../components/AboutSectionCard/AboutSectionCard";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import Swiper core and required modules
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
-// import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -66,39 +61,39 @@ const aboutSectionCardData = [
 
 
 const AboutSection = () => {
+
 	return (
 		<div className="AboutSection">
 			<h2 className="AboutSection-title">Biz haqimizda foydalanuvchilar fikrlari</h2>
 
-			<div className="AboutSection-cards" style={{display: "flex"}}>
-				{
-					aboutSectionCardData.map((data) => (
-						
-					// <Swiper
-					// 	modules={[Navigation, Pagination, Scrollbar, A11y]}
-					// 	spaceBetween={50}
-					// 	slidesPerView={3}
-					// 	navigation
-					// 	pagination={{ clickable: true }}
-					// 	scrollbar={{ draggable: true }}
-					// 	onSwiper={(swiper) => console.log(swiper)}
-					// 	onSlideChange={() => console.log('slide change')}
-					// 	>
-					// 	<SwiperSlide>
-							<AboutSectionCard
-								key={data.id}
-								image={data.image}
-								cardTitle={data.cardTitle}
-								cardText={data.cardText}
-								authorImg={data.authorImg}
-								authorName={data.authorName}
-								authorJob={data.authorJob}
-								status={data.status}
-							/>
-					// 	</SwiperSlide>
-					// </Swiper>
-					))					
-				}
+			<div className="AboutSection-cards" style={{ display: "flex" }}>
+				<Swiper
+					spaceBetween={1}
+					slidesPerView={1.7}
+					loop={true}
+					autoplay={{
+						delay: 1000,
+						disableOnInteraction: false
+					}}
+				>
+					{
+						aboutSectionCardData.map((data) => (
+
+							<SwiperSlide>
+								<AboutSectionCard
+									key={data.id}
+									image={data.image}
+									cardTitle={data.cardTitle}
+									cardText={data.cardText}
+									authorImg={data.authorImg}
+									authorName={data.authorName}
+									authorJob={data.authorJob}
+									status={data.status}
+								/>
+							</SwiperSlide>
+						))
+					}
+				</Swiper>
 			</div>
 
 		</div>
