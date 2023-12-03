@@ -1,0 +1,80 @@
+.Card {
+    width: 350px;
+    margin-right: 55px;
+    border-radius: 25px;
+    position: relative;
+    padding: 20px;
+    transition: all ease 0.4s;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.51);
+    }
+
+    &-img {
+        width: 340px;
+        height: 380px;
+    }
+
+    &-status {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        border-radius: 32px;
+        background: var(--blue-100, #DBEAFE);
+        padding: 10px 15px;
+        position: absolute;
+        top: 330px;
+        left: 25px;
+        margin: auto;
+        z-index: 1;
+    }
+
+    &-title {
+        color: var(--neutral-900, #0E1735);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        margin: 25px 0 10px 0;
+    }
+
+    &-price {
+        color: var(--neutral-700, #3C4563);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; 
+        margin-bottom: 25px;
+    }
+
+    &-author {
+        display: flex;
+        align-items: center;
+
+        &-avatar {
+            width: 40px;
+            height: 40px;
+            margin-right: 25px;
+        }
+
+        &-name {
+            color: var(--neutral-900, #0E1735);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+            margin: 10px;
+        }
+
+        &-address {
+            color: var(--neutral-500, #888B97);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+        }
+    }
+}

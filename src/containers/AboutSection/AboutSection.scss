@@ -1,0 +1,15 @@
+.AboutSection {
+    text-align: center;
+    margin-bottom: 160px;
+
+    &-title {
+        color: var(--mrt-app-headline, #1B1C57);
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: none;
+        margin-bottom: 50px;
+    }
+}

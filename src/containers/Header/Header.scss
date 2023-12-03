@@ -1,0 +1,39 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    box-sizing: border-box;
+    
+    .logo {
+        height: 70px;
+    }
+
+    .navbar {
+        
+        &-btn {
+            color: var(--neutral-100, #F0F3FD);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-radius: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            background: rgba(255, 255, 255, 0.10);
+            padding: 10px;
+            margin-left: 15px;
+
+            &.signup {
+                color: var(--green-700, #047857);
+                background: #D1FAE5;
+                padding: 16px;
+            }
+        }
+
+        select option {
+            color: black;
+        }
+
+        
+    }
+}

@@ -1,0 +1,95 @@
+.AboutSectionCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    &-img {
+        width: 750px;
+        height: 400px;
+        margin: 0 30px;
+    }
+    
+    &-inner {
+        text-align: left;
+        width: 615px;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.51);
+        padding: 35px;
+        position: relative;
+        top: -150px;
+
+
+        .title {
+            color: var(--mrt-app-headline, #1B1C57);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .text {
+            color: var(--mrt-app-neutral-01, #626687);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            opacity: 0.75;
+            margin: 15px 0 25px 0;
+        }
+
+        .authorImg {
+            width: 50px;
+            height: 50px;
+            margin-right: 25px;
+        }
+
+        .authorName {
+            color: var(--neutral-900, #0E1735);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        .authorJob {
+            color: var(--neutral-500, #888B97);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        .status {
+            color: var(--neutral-700, #3C4563);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        .authorSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .authorInfo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .statusSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                margin-right: 15px;
+            }
+        }
+    }
+}
